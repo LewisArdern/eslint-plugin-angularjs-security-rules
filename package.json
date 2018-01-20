@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-angularjs-security-rules",
+  "version": "1.0.0",
+  "description": "ESLint plugin that contains AngularJS rules",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --recursive tests/rules"    
+  },
+  "keywords": [
+    "security",
+    "eslint",
+    "eslint-plugin",
+    "lint"
+  ],
+  "author": "Lewis Ardern",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.15.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0"
+  }
+}
