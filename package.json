@@ -2,7 +2,7 @@
   "name": "eslint-plugin-angularjs-security-rules",
   "version": "1.0.0",
   "description": "ESLint plugin that contains AngularJS rules",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "directories": {
     "test": "tests"
   },
@@ -13,6 +13,8 @@
     "security",
     "eslint",
     "eslint-plugin",
+    "Angular",
+    "AngularJS",
     "lint"
   ],
   "author": "Lewis Ardern",
