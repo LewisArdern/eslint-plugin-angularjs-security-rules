@@ -1,6 +1,6 @@
 # AngularJS Security Rules For ESLint
 
-These rules are to supplement the security issues documented in my talks at [OWASP London](https://www.slideshare.net/LewisArdern/so-you-thought-you-were-safe-using-angularjs-think-again) and [FluentConf](https://www.slideshare.net/LewisArdern/so-you-thought-you-were-safe-using-angularjs-think-again) around AngularJS Security.
+These rules are to supplement the security issues documented in my talks at [OWASP London](https://www.slideshare.net/LewisArdern/owasp-london-so-you-thought-you-were-safe-using-angularjs-think-again) and [FluentConf](https://www.slideshare.net/LewisArdern/so-you-thought-you-were-safe-using-angularjs-think-again) around AngularJS Security.
 
 The current ruleset supports only Angular 1.x issues, and can be noisy, but they are a work in progress. 
 
