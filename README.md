@@ -2,6 +2,8 @@
 
 These rules are to supplement the security issues documented in my talks at [OWASP London](https://www.slideshare.net/LewisArdern/owasp-london-so-you-thought-you-were-safe-using-angularjs-think-again) and [FluentConf](https://www.slideshare.net/LewisArdern/so-you-thought-you-were-safe-using-angularjs-think-again) around AngularJS Security.
 
+They are currently used as points of interest that would need to be investigate further, but in the upcoming releases they will be a lot more useful when developers write code.
+
 # Usage
 
 These rules can be used by downloading the [Config](https://github.com/LewisArdern/eslint-config-angular-security) which includes the installation settings.
@@ -19,6 +21,12 @@ Current rules are:
 * detect-angular-scope-expressions
 * detect-angular-service-expressions
 * detect-angular-trustAs-methods
+* detect-angular-trustAsCss-method
+* detect-angular-trustAsHtml-method
+* detect-angular-sce-disabled
+* detect-angular-trustAsJs-method
+* detect-angular-trustAsResourceUrl-method
+* detect-angular-trustAsUrl-method
 * detect-third-party-angular-translate
 
 TODO:
