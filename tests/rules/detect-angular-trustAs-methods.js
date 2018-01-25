@@ -51,36 +51,6 @@ eslintTester.run("detect-angular-trustAs-methods", rule, {
       errors: [
         { message: "The use of $sce.trustAs can be dangerous" }
       ],
-    },
-    {
-      code: "$sce.trustAsHtml(value);",
-      errors: [
-        { message: "The use of $sce.trustAsHtml can be dangerous" }
-      ],
-    },
-    {
-      code: "$sce.trustAsUrl(value);",
-      errors: [
-        { message: "The use of $sce.trustAsUrl can be dangerous" }
-      ],
-    },
-    {
-      code: "$sce.trustAsJs(value);",
-      errors: [
-        { message: "The use of $sce.trustAsJs can be dangerous" }
-      ],
-    },
-    {
-      code: "$sce.trustAsCss(value);",
-      errors: [
-        { message: "The use of $sce.trustAsCss can be dangerous" }
-      ],
-    },
-    {
-      code: "$sce.trustAsResourceUrl(value);",
-      errors: [
-        { message: "The use of $sce.trustAsResourceUrl can be dangerous" }
-      ],
-    },
+    }
   ]
 }); 

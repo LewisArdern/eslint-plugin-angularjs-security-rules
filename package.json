@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-angularjs-security-rules",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESLint plugin that contains AngularJS rules",
   "main": "./lib/index.js",
   "directories": {
