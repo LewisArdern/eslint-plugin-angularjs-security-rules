@@ -19,13 +19,13 @@ var eslintTester = new RuleTester();
 
 eslintTester.run("detect-angular-orderBy-expressions", rule, {
   valid: [
-    { code: "foo()" } // no need to look for valid as we are just doing detection 
+    { code: "$filter('filter')(array, expression, comparator, anyPropertyKey)" } // no need to look for valid as we are just doing detection 
   ],    
   invalid: [
     {
       code: "$filter('orderBy')(collection, expression, reverse, comparator)",
       errors: [
-        { message: "The method $filter can be dangerous" }
+        { message: "The method $filter('orderBy') can be dangerous" }
       ],
     }
   ]
