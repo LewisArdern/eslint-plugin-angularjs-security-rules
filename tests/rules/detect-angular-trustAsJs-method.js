@@ -19,11 +19,18 @@ var eslintTester = new RuleTester();
 
 eslintTester.run("detect-angular-trustAsJs-method", rule, {
   valid: [
-    { code: "$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
+    { code: "$sce.ParseAsHtml()" },
+    { code: "this.$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
   ],    
   invalid: [
     {
       code: "$sce.trustAsJs(value);",
+      errors: [
+        { message: "The use of $sce.trustAsJs can be dangerous" }
+      ],
+    },
+    {
+      code: "this.$sce.trustAsJs(value);",
       errors: [
         { message: "The use of $sce.trustAsJs can be dangerous" }
       ],
