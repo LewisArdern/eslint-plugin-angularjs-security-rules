@@ -19,6 +19,7 @@ var eslintTester = new RuleTester();
 
 eslintTester.run("detect-angular-trustAsResourceUrl-method", rule, {
   valid: [
+    { code: "$sce.trustAsResourceUrl('stringLiteral');" }, // string literals are OK
     { code: "$sce.ParseAsHtml()" },
     { code: "this.$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
   ],  

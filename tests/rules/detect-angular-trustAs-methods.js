@@ -19,6 +19,8 @@ var eslintTester = new RuleTester();
 
 eslintTester.run("detect-angular-trustAs-methods", rule, {
   valid: [
+    { code: "this.$sce.trustAs($sce.HTML, 'stringLiteralValue');" }, // string literals are OK
+    { code: "$sce.trustAs($sce.HTML, 'stringLiteralValue');" },
     { code: "$sce.ParseAsHtml()" },
     { code: "this.$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
   ],  
