@@ -19,14 +19,22 @@ var eslintTester = new RuleTester();
 
 eslintTester.run("detect-angular-trustAsHtml-method", rule, {
   valid: [
-    { code: "$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
-  ],    
+    { code: "$sce.trustAsHtml('stringLiteral');" }, // string literals are OK
+    { code: "$sce.ParseAsHtml()" },
+    { code: "this.$sce.ParseAsHtml()" } // no need to look for valid as we are just doing detection 
+  ],  
   invalid: [
     {
       code: "$sce.trustAsHtml(value);",
       errors: [
         { message: "The use of $sce.trustAsHtml can be dangerous" }
       ],
-    }
+    },
+    {
+      code: "this.$sce.trustAsHtml(value);",
+      errors: [
+        { message: "The use of $sce.trustAsHtml can be dangerous" }
+      ],
+    },
   ]
 }); 
