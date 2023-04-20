@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^8.2.1",
-    "eslint": "^4.16.0",
+    "eslint": "^8.38.0",
     "requireindex": "^1.1.0"
   },
   "devDependencies": {
